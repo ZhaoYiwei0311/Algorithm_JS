@@ -36,6 +36,8 @@ var fullJustify = function(words, maxWidth) {
         }
 
         const avgSpaces = Math.floor(numSpaces / (numWords - 1));
+
+        // the first remaining words will have one extra space
         const extraSpaces = numSpaces % (numWords - 1);
         const s1 = words.slice(left, left + extraSpaces + 1).join(blank(avgSpaces + 1));
         const s2 = words.slice(left + extraSpaces + 1, right).join(blank(avgSpaces));
