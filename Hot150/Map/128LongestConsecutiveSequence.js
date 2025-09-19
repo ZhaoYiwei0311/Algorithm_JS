@@ -10,7 +10,7 @@ var longestConsecutive = function(nums) {
             continue
         }
         // element is the start
-        let y = element + 1;
+        let y = element + 1; // y is the next of start
         while (set.has(y)) {
             y++;
         }
